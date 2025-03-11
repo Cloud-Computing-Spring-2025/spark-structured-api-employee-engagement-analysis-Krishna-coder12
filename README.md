@@ -57,7 +57,7 @@ EmployeeEngagementAnalysis/
 
 You can run the analysis tasks using Docker.
 
-#### **Running with Docker (Optional)**
+#### **Running with Docker**
 
 1. **Start the Spark Cluster**:
    ```bash
