@@ -24,13 +24,6 @@ Before starting the assignment, ensure you have the following software installed
      spark-submit --version
      ```
 
-4. **Docker & Docker Compose** (Optional):
-   - If you prefer using Docker for setting up Spark, ensure Docker and Docker Compose are installed.
-   - [Docker Installation Guide](https://docs.docker.com/get-docker/)
-   - [Docker Compose Installation Guide](https://docs.docker.com/compose/install/)
-5. **HDFS on Docker** (Optional):
-   - [HDFS, Hive, Hue,Spark](https://github.com/Wittline/apache-spark-docker)
-   - [HDFS on Spark](https://github.com/big-data-europe/docker-hadoop-spark-workbench)
 
 ## **Setup Instructions**
 
