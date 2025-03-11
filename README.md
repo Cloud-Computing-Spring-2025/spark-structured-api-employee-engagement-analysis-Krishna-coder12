@@ -62,33 +62,9 @@ EmployeeEngagementAnalysis/
 
 ### **2. Running the Analysis Tasks**
 
-You can run the analysis tasks either locally or using Docker.
+You can run the analysis tasks using Docker.
 
-#### **a. Running Locally**
-
-1. **Navigate to the Project Directory**:
-   ```bash
-   cd EmployeeEngagementAnalysis/
-   ```
-
-2. **Execute Each Task Using `spark-submit`**:
-   ```bash
-   spark-submit src/task1_identify_departments_high_satisfaction.py
-   spark-submit src/task2_valued_no_suggestions.py
-   spark-submit src/task3_compare_engagement_levels.py
-   ```
-
-3. **Verify the Outputs**:
-   Check the `outputs/` directory for the resulting files:
-   ```bash
-   ls outputs/
-   ```
-   You should see:
-   - `departments_high_satisfaction.csv`
-   - `valued_no_suggestions.txt`
-   - `engagement_levels_job_titles.csv`
-
-#### **b. Running with Docker (Optional)**
+#### **Running with Docker (Optional)**
 
 1. **Start the Spark Cluster**:
    ```bash
