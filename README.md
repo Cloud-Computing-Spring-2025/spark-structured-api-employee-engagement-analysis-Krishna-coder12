@@ -66,7 +66,7 @@ You can run the analysis tasks using Docker.
 
 2. **Access the Spark Master Container**:
    ```bash
-   docker exec -it spark-master bash
+   docker exec -it my-spark-master bash
    ```
 
 3. **Navigate to the Spark Directory**:
@@ -74,16 +74,16 @@ You can run the analysis tasks using Docker.
    cd /opt/bitnami/spark/
    ```
 
-4. **Run Your PySpark Scripts Using `spark-submit`**:
+4. **Exit the Container**:
+   ```bash
+   exit
+   ```
+   
+5. **Run Your PySpark Scripts Using `spark-submit`**:
    ```bash
    spark-submit src/task1_identify_departments_high_satisfaction.py
    spark-submit src/task2_valued_no_suggestions.py
    spark-submit src/task3_compare_engagement_levels.py
-   ```
-
-5. **Exit the Container**:
-   ```bash
-   exit
    ```
 
 6. **Verify the Outputs**:
@@ -96,7 +96,7 @@ You can run the analysis tasks using Docker.
 
 ## **Overview**
 
-In this assignment, you will leverage Spark Structured APIs to analyze a dataset containing employee information from various departments within an organization. Your goal is to extract meaningful insights related to employee satisfaction, engagement, concerns, and job titles. This exercise is designed to enhance your data manipulation and analytical skills using Spark's powerful APIs.
+In this assignment, we will leverage Spark Structured APIs to analyze a dataset containing employee information from various departments within an organization. Your goal is to extract meaningful insights related to employee satisfaction, engagement, concerns, and job titles. This exercise is designed to enhance your data manipulation and analytical skills using Spark's powerful APIs.
 
 ## **Objectives**
 
@@ -156,12 +156,13 @@ Determine which departments have more than 50% of their employees with a Satisfa
 
 A list of departments meeting the specified criteria, along with the corresponding percentages.
 
-**Example Output:**
+**Output:**
 
 | Department | Percentage |
 |------------|------------|
-| Finance    | 60%        |
-| Marketing  | 55%        |
+| Sales      | 5.88       |
+| Marketing  | 9.09       |
+| IT         | 15.0       |
 
 ---
 
@@ -181,11 +182,11 @@ Identify employees who feel valued (defined as having a Satisfaction Rating of 4
 
 Insights into the number and proportion of employees who feel valued but aren’t providing suggestions.
 
-**Example Output:**
+**Output:**
 
 ```
-Number of Employees Feeling Valued without Suggestions: 25
-Proportion: 25%
+Number of Employees Feeling Valued without Suggestions: 18
+Proportion: 18.0%
 ```
 
 ---
@@ -206,15 +207,15 @@ Examine how Engagement Levels vary across different Job Titles and identify whic
 
 A comparative analysis showing average Engagement Levels across Job Titles, highlighting the top-performing Job Title.
 
-**Example Output:**
+**Output:**
 
 | JobTitle    | AvgEngagementLevel |
 |-------------|--------------------|
-| Manager     | 4.5                |
-| Executive   | 4.2                |
-| Developer   | 3.8                |
-| Analyst     | 3.5                |
-| Coordinator | 3.0                |
-| Support     | 2.8                |
+| Coordinator | 1.82              |
+| Developer   | 2.14              |
+| Executive   | 1.97              |
+| Analyst     | 1.95              |
+| Support     | 1.6               |
+| Manager     | 1.88              |
 
 ---
