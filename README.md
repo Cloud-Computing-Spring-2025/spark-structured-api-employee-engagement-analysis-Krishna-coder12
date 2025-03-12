@@ -37,7 +37,7 @@ EmployeeEngagementAnalysis/
 │   └── employee_data.csv
 ├── outputs/
 │   ├── departments_high_satisfaction.csv
-│   ├── valued_no_suggestions.txt
+│   ├── valued_no_suggestions.csv
 │   └── engagement_levels_job_titles.csv
 ├── src/
 │   ├── task1_identify_departments_high_satisfaction.py
